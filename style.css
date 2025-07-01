@@ -1,0 +1,284 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.logo {
+  font-size: 28.8px;
+  font-weight: bold;
+  color: #0e2338;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+/* Banner */
+.banner {
+  height: 60vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 32px;
+}
+
+.banner h1 {
+  font-size: 44.8px;
+  margin-bottom: 16px;
+}
+
+.banner p {
+  font-size: 19.2px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  padding: 12.8px 24px;
+  background: white;
+  color: #764ba2;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 32px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  margin-right: 32px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.about-img {
+  flex: 1 1 100px;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Skills */
+.skills {
+  background-color: white;
+  padding: 32px 32px;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 32px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  gap: 32px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: rgb(238, 184, 184);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card img {
+  width: 100px;
+  margin-bottom: 8px;
+}
+
+/* Projects */
+.projects {
+  padding: 64px 32px;
+  background: #fff;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.project {
+  background: #f9f9f9;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+.contact {
+  background: #f4f4f4;
+  padding: 64px 32px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contact button {
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  padding: 12.8px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #5e3d8b;
+}
+
+.contact-links {
+  margin-top: 32px;
+}
+
+.contact-links a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+ /* Responsive Design  */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-img {
+    margin: 16px 0;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  }
+
+  .contact form {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
